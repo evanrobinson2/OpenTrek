@@ -1,0 +1,64 @@
+  /* align the button to the right */
+  .form-group .btn {
+    float: right;
+  }
+
+  .speaker-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  body {
+    background-color: #202123;
+    color: white;
+  }
+
+  /* Style for the modal */
+  .modal-content {
+    background-color: #444654;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .modal-header {
+    border-bottom: 1px solid #2a2b32;
+  }
+
+  .modal-title {
+    color: white;
+  }
+
+  .modal-body {
+    background-color: #2a2b32;
+    color: white;
+  }
+
+  .modal-footer {
+    border-top: 1px solid #2a2b32;
+  }
+
+  .btn-default {
+    background-color: #f1f1f1;
+    color: #444654;
+    border: none;
+  }
+
+  .btn-default:hover {
+    background-color: #2a2b32;
+    color: white;
+    border: none;
+
+  }
+
+  .btn-default:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+
+  }
+
+  .btn-default:active {
+    background-color: #444654;
+    color: white;
+    border: none;
+  }

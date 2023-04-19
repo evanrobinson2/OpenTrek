@@ -1,0 +1,103 @@
+.chat-container {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .chat-transcript {
+    height: 700px;
+    overflow-y: scroll;
+    background-color: #444654;
+    padding: 20px;
+  }
+
+  /* Style the scrollbar */
+  .chat-transcript::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .chat-transcript::-webkit-scrollbar-thumb {
+    background-color: #4ABDAC;
+    border-radius: 10px;
+  }
+
+  .chat-transcript::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+
+  .chat-box-container {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .chat-box-container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .chat-box-container::-webkit-scrollbar-thumb {
+    background-color: #4ABDAC;
+    border-radius: 10px;
+  }
+
+  .chat-box-container::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .chat-table td {
+    color: white;
+    border-bottom: 1px solid #2a2b32;
+    border-top: 1px solid transparent;
+  }
+
+  .chat-table td {
+    color: white;
+    border-bottom: 1px solid #2a2b32;
+  }
+
+  .chat-table tr:nth-child(even) {
+    background-color: #444654;
+  }
+
+  .chat-table tr:nth-child(odd) {
+    background-color: #343541;
+  }
+
+
+  .chat-box {
+    background-color: #292B2E;
+    border: 1px solid #444654;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    resize: none;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .form-control.chat-box {
+      background-color: #444654;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      padding: 10px;
+  }
+  .form-control.chat-box:focus {
+      background-color: #444654;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      padding: 10px;
+  }

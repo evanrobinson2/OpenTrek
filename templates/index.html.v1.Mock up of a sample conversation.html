@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatGPT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+</head>
+<body>
+
+<div class="container chat-container">
+    <!-- <h1 class="text-center mb-4">ChatGPT</h1> -->
+    <div class="chat-transcript">
+        <table class="table chat-table">
+            <tbody>
+                <tr>
+                    <td><img class="speaker-icon" src="{{ url_for('static', filename='assets/images/ai.png') }}" alt="user-icon"></td>
+                    <td>Hi there, can you help me mockup a Bootstrap page?</td>
+                </tr>
+                <tr>
+                    <td><img class="speaker-icon" src="{{ url_for('static', filename='assets/images/player.png') }}" alt="user-icon"></td>
+                    <td>Hi there, can you help me mockup a Bootstrap page?</td>
+                </tr>
+                <tr>
+                    <td><img class="speaker-icon" src="{{ url_for('static', filename='assets/images/ai.png') }}" alt="user-icon"></td>
+                    <td>Hi there, can you help me mockup a Bootstrap page?</td>
+                </tr>
+                <tr>
+                    <td><img class="speaker-icon" src="{{ url_for('static', filename='assets/images/player.png') }}" alt="user-icon"></td>
+                    <td>Hi there, can you help me mockup a Bootstrap page?</td>
+                </tr>
+                <tr>
+                    <td><img class="speaker-icon" src="{{ url_for('static', filename='assets/images/ai.png') }}" alt="user-icon"></td>
+                    <td>Hi there, can you help me mockup a Bootstrap page?</td>
+                </tr>
+                <tr>
+                    <td><img class="speaker-icon" src="{{ url_for('static', filename='assets/images/player.png') }}" alt="user-icon"></td>
+                    <td>Hi there, can you help me mockup a Bootstrap page?</td>
+                </tr>
+                <tr>
+                    <td><img class="speaker-icon" src="{{ url_for('static', filename='assets/images/ai.png') }}" alt="user-icon"></td>
+                    <td>Hi there, can you help me mockup a Bootstrap page?</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="chat-box-container">
+        <div class="row">
+            <div class="col-md-8">
+        <textarea class="form-control chat-box" id="message" name="message" rows="1"></textarea>
+      </div>
+      <div class="col-md-4">
+        <button type="submit" class="btn btn-primary send-button" data-toggle="modal" data-target="#myModal">Send</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Message sent!</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <p>Your message has been sent.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
